@@ -1,0 +1,154 @@
+body {
+  background: url('../images/yellow_background.png');
+}
+
+.main-div {
+  margin: auto;
+  max-width: 800px;
+}
+
+.logo-wrapper {
+  display: inline-block;
+}
+
+.nav-tabs {
+  list-style-type: none;
+}
+
+.nav-tabs li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-tabs  li a {
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+header {
+  background: url('../images/line.png') repeat-x bottom;
+}
+
+header p {
+  display: inline-block;
+  margin-right: 400px;
+  position: inherit;
+  width: 400px;
+}
+
+nav {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 400px;
+  position: relative;
+  text-align: right;
+  width: 400px;
+}
+
+.banner-image {
+  background: url('../images/sanfrancisco.jpg') no-repeat;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.banner-text {
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  bottom: 0;
+  color: white;
+  height: 33px;
+  padding-left: 4px;
+  padding-top: 15px;
+  position: absolute;
+  width: 99.5%;
+}
+
+.red-button {
+  background: url('../images/red_background.png') repeat-x;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  bottom: 5px;
+  color: white;
+  display: inline-block;
+  height: 25px;
+  padding: 3px 8px 0px 8px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.container-div {
+  height: 450px;
+  width: 800px;
+}
+
+.text-container, .about-author {
+  display: inline-block;
+  text-align: justify;
+}
+
+.text-container {
+  width: 520px;
+  margin-right: 15px;
+}
+
+.about-author {
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  width: 235px;
+}
+
+.zozor-picture {
+  text-align: center;
+}
+
+.zozor-picture img {
+  border: 1px solid black;
+}
+
+footer {
+  background: url('../images/line.png') repeat-x top;
+}
+
+.tweet {
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+
+.my-pictures {
+  display: inline-block;
+  float: middle;
+  width: 300px;
+}
+
+.my-friends {
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
+
+.my-pictures img {
+  border: 1px solid;
+  height: 50px;
+  width: 50px;
+}
+
+.my-friends ul {
+  color: maroon;
+  display: inline-block;
+  list-style: square url('../images/external_link.png');
+  padding: 1px ;
+}
+
+.my-friends li a {
+  color: maroon;
+  text-decoration: none;
+}

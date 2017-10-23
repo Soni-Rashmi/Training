@@ -1,0 +1,131 @@
+body {
+  background-image: url('../images/tooplate_body.jpg');
+  background-repeat: repeat-x;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 77%;
+}
+
+header {
+  background-image: url('../images/tooplate_header.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 230px;
+}
+
+.nav {
+  list-style-type: none;
+}
+
+.nav ul {
+  padding-top: 10px;
+}
+.nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.nav li a {
+  color: #4A5259;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 25%;
+  margin-left: 160px;
+}
+
+.logo span {
+  display: block;
+  padding-top: 0px;
+  margin-left: 160px;
+  color: #4A5259;
+}
+
+.search {
+  background-image: url('../images/tooplate_middle.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 70px;
+}
+
+.search span {
+  background-image: url('../images/tooplate_search.png');
+  background-repeat: no-repeat;
+  color: white;
+  float: right;
+  font-size: 10pt;
+  height: 29px;
+  padding-left: 10px;
+  width: 242px;
+}
+
+.desc {
+  background-image: url('../images/tooplate_main.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+section {
+  display: inline-block;
+  float: left;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.learn-more-img {
+  display: inline-block;
+  padding-left: 100px;
+  padding-top: 10px;
+  margin-left: 90px;
+}
+
+.container {
+  clear: both;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.grid {
+  display: inline-block;
+  float: left;
+  height: 185px;
+  padding: 10px;
+  width: 290px;
+}
+
+.learn-more {
+  background-image: url('../images/tooplate_button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 31px;
+  margin-top: 6px;
+  padding-top: 10px;
+  width: 140px;
+}
+span {
+  color: #85C1E9;
+  font-size: 15pt;
+}
+
+.portfolio {
+  padding-left: 25px;
+}
+
+footer {
+  background-color: #AED6F1;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px;) {
+
+}

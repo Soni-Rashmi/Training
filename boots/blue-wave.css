@@ -1,0 +1,63 @@
+body {
+  background-image: url('./images/tooplate_body.jpg');
+  background-repeat: repeat-x;
+}
+
+.header {
+  background-image: url('./images/tooplate_header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.img-rounded {
+  padding-top: 20px;
+}
+
+.middle-header {
+  background-image: url('./images/tooplate_middle.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+}
+
+.search {
+  background-image: url('./images/tooplate_search.png');
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  font-size: 10pt;
+  height: 29px;
+  padding-left: 10px;
+  width: 242px;
+}
+
+.desc {
+  background-image: url('./images/tooplate_main.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140px;
+}
+
+.desc-para {
+  padding-top: 20px;
+}
+
+.grid {
+  height: 185px;
+}
+
+span {
+  color: #85C1E9;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.footer {
+  background-color: #AED6F1;
+  padding: 20px;
+  text-align: center;
+}

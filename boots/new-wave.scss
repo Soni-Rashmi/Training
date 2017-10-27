@@ -1,0 +1,108 @@
+$font-color: #1368AD;
+$min-screen-width : 768px;
+$max-screen-width: 1224px;
+
+@mixin bg-color($color) {
+  background-color: $color;
+}
+
+.header-navbar {
+  height: 50px;
+
+  .header-navbar-submenu {
+    @include bg-color(#E1F5FE);
+  }
+}
+
+.page-body {
+  background-image: url('./images/Background-26.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+
+  .banner-text {
+    margin: 20px 20px;
+  }
+
+  .search {
+    margin: 50px 100px 50px 800px;
+  }
+
+  .content-box {
+      margin-bottom: 20px;
+
+      .large-button {
+        margin-right: 120px;
+      }
+  }
+
+  .portfolio {
+    margin-top: 20px;
+    padding: 0px 20px;
+    @extend .content-box;
+
+    .portfolio-text {
+      padding-left: 10px;
+    }
+  }
+
+  span {
+    color: $font-color;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  @media screen and (max-width: $min-screen-width - 1) {
+    .header {
+      background-size: cover;
+      height: 400px;
+    }
+    .banner-text {
+      margin-left: 5px;
+    }
+
+    .search {
+      margin: 5px 5px 15px;
+    }
+
+    .large-button {
+      margin-right: 150px;
+    }
+    .content-box {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $min-screen-width) and (max-width: $max-screen-width) {
+    .banner-text {
+      margin: 20px 20px;
+    }
+
+    .header {
+      background-size: cover;
+    }
+    .img-caption {
+      text-align: left;
+    }
+
+    .content-box {
+      margin: 5px 35px;
+    }
+
+    .search {
+      margin: 50px 30px 40px 5px;
+    }
+
+    .large-button {
+      float: right;
+      margin-right: 90px;
+    }
+  }
+
+}
+
+footer {
+  @include bg-color(#AED6F1);
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+$font-color: #D44E1F;
+
+@mixin set-bg-color($bg-color) {
+  background-color: $bg-color;
+}
+
+body {
+  @include set-bg-color(#E1F5FE);
+  font-size: 15px;
+}
+
+header {
+  @include set-bg-color(#81D4FA);
+  font-size: 40px;
+  height: 150px;
+  padding-top: 30px;
+  text-align: center;
+  width: auto;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.required-field::after {
+  color: $font-color;
+  content: "*";
+}

@@ -1,31 +1,28 @@
-.header {
-  background-image: url('./images/tooplate_header.jpg');
-  background-position: bottom;
+.page-body {
+  background-image: url('./images/Background-26.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+}
+.my-navbar {
+  height: 50px;
 }
 
-.hero-img {
-  padding: 20px 70px;
+.my-navbar-submenu {
+  background-color: #E1F5FE;
 }
 
-.header p {
-  padding-left: 70px;
+.page-body {
+  margin-top: 50px;
 }
-
-.middle-header {
-  background-image: url('./images/tooplate_middle.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90px;
-}
-
 .search {
-  float: right;
-  width: 200px;
-  margin: 30px 80px 0px 0px;
+  margin: 50px 200px 50px 800px;
+}
+.banner-text {
+  margin: 20px 50px;
+}
+
+.large-button {
+  margin-right: 120px;
 }
 
 .desc {
@@ -33,17 +30,12 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 125px;
+  padding-top: 20px;
 }
 
-.left-div {
-  float: left;
-  margin: 20px;
-}
-
-.right-div {
-  float: right;
-  margin-right: 80px;
+.content-box {
+    margin-bottom: 20px;
 }
 
 span {
@@ -52,72 +44,67 @@ span {
   padding-bottom: 5px;
 }
 
-.paragraph {
-  height: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .portfolio {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0px 20px;
 }
 
+.portfolio-text {
+  padding-left: 10px;
+}
 .img-caption {
   text-align: center;
 }
 
-.footer {
+footer {
   background-color: #AED6F1;
-  margin: 20px;
   padding: 20px;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1223px) {
+  .banner-text {
+    margin: 20px 10px;
+  }
+
   .header {
     background-size: cover;
   }
-
-  .middle-header {
-    background-position: top;
-    background-size: cover;
-    height: 70px;
+  .img-caption {
+    text-align: left;
   }
 
-  .portfolio div{
-    border: 1px solid;
-    padding-bottom: 10px;
-  }
-
-  .portfolio-img {
-    padding: 0px 70px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    background-position: top;
-    background-size: cover;
-    height: 200px;
-  }
-
-  .middle-header {
-    background-position: top;
-    background-size: cover;
-    height: 60px;
+  .content-box {
+    margin: 5px 35px;
   }
 
   .search {
-    margin-right: 30px;
+    margin: 50px 30px 40px 5px;
   }
 
-  .portfolio div{
-    border: 1px solid;
-    padding-bottom: 10px;
+  .large-button {
+    float: right;
+    margin-right: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    background-size: cover;
+    height: 400px;
+  }
+  .banner-text {
+    margin-left: 5px;
   }
 
-  .portfolio-img {
-    padding: 0px 130px;
+  .search {
+    margin: 5px 5px 15px;
+  }
+
+  .large-button {
+    margin-right: 150px;
+  }
+  .content-box {
+    margin-bottom: 20px;
   }
 }

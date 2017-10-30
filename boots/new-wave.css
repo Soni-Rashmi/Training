@@ -1,0 +1,60 @@
+.header-navbar {
+  height: 50px; }
+  .header-navbar .header-navbar-submenu {
+    background-color: #E1F5FE; }
+
+.page-body {
+  background-image: url("./images/Background-26.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px; }
+  .page-body .banner-text {
+    margin: 20px 20px; }
+  .page-body .search {
+    margin: 50px 100px 50px 800px; }
+  .page-body .content-box, .page-body .portfolio {
+    margin-bottom: 20px; }
+    .page-body .content-box .large-button, .page-body .portfolio .large-button {
+      margin-right: 120px; }
+  .page-body .portfolio {
+    margin-top: 20px;
+    padding: 0px 20px; }
+    .page-body .portfolio .portfolio-text {
+      padding-left: 10px; }
+  .page-body span {
+    color: #1368AD;
+    font-size: 20px;
+    padding-bottom: 5px; }
+  @media screen and (max-width: 767px) {
+    .page-body .header {
+      background-size: cover;
+      height: 400px; }
+    .page-body .banner-text {
+      margin-left: 5px; }
+    .page-body .search {
+      margin: 5px 5px 15px; }
+    .page-body .large-button {
+      margin-right: 150px; }
+    .page-body .content-box, .page-body .portfolio {
+      margin-bottom: 20px; } }
+  @media screen and (min-width: 768px) and (max-width: 1224px) {
+    .page-body .banner-text {
+      margin: 20px 20px; }
+    .page-body .header {
+      background-size: cover; }
+    .page-body .img-caption {
+      text-align: left; }
+    .page-body .content-box, .page-body .portfolio {
+      margin: 5px 35px; }
+    .page-body .search {
+      margin: 50px 30px 40px 5px; }
+    .page-body .large-button {
+      float: right;
+      margin-right: 90px; } }
+
+footer {
+  background-color: #AED6F1;
+  padding: 20px;
+  text-align: center; }
+
+/*# sourceMappingURL=new-wave.css.map */

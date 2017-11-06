@@ -1,0 +1,56 @@
+body .header {
+  background-color: #AED6F1;
+  font-size: 40px;
+  text-align: center; }
+body .search-bar {
+  margin-bottom: 30px; }
+body .search {
+  cursor: auto;
+  border: 1px solid #B0B0B0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; }
+body .page-content {
+  min-height: 750px; }
+  body .page-content .tile {
+    border-style: groove;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 10px 10px; }
+    body .page-content .tile .image-item {
+      height: 220px; }
+    body .page-content .tile .img-info .img-description {
+      overflow: hidden;
+      text-align: justify;
+      text-overflow: clip;
+      white-space: normal;
+      height: 60px; }
+    body .page-content .tile .img-info .img-title {
+      border-bottom-style: groove;
+      font-size: 20px;
+      font-weight: 400;
+      height: 45px;
+      overflow: hidden;
+      padding-top: 15px;
+      text-overflow: clip;
+      white-space: normal; }
+    body .page-content .tile .button {
+      text-align: center; }
+      body .page-content .tile .button .watch-btn {
+        background-color: #AED6F1;
+        border-radius: 5px;
+        margin-left: 30px;
+        padding: 3px 15px; }
+      body .page-content .tile .button .like-btn {
+        float: right;
+        padding: 5px 5px 0px; }
+body footer {
+  background-color: #AED6F1;
+  margin: 20px;
+  padding: 20px;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .image-item {
+    height: 220px; } }
+
+/*# sourceMappingURL=ytd-search.css.map */

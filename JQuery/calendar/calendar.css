@@ -1,0 +1,43 @@
+.calendar-div {
+  margin-top: 50px; }
+  .calendar-div .month-name {
+    background-color: #5d97ed;
+    border-style: groove;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center; }
+  .calendar-div .cell {
+    border: 1px solid #5d97ed;
+    border-style: groove;
+    font-size: 19px;
+    height: 60px;
+    max-width: 50px;
+    text-align: center; }
+  .calendar-div .sunday {
+    color: #ff0606; }
+  .calendar-div .saturday {
+    color: #7bc645; }
+  .calendar-div .today {
+    background-color: #5d97ed;
+    font-size: 35px; }
+  .calendar-div .other-days {
+    color: #6b6969;
+    background-color: #e2e2e2; }
+
+.navigation {
+  border-style: none;
+  position: fixed;
+  text-align: center;
+  top: 545px;
+  width: 785px; }
+  .navigation .previous-btn, .navigation .next-btn {
+    background-color: #5d97ed;
+    border-radius: 3px;
+    font-size: 20px; }
+  .navigation .previous-btn {
+    padding: 3px 25px; }
+  .navigation .next-btn {
+    margin-right: -45px;
+    padding: 3px 25px; }
+
+/*# sourceMappingURL=calendar.css.map */

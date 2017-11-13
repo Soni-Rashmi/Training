@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BS Forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header class="text-info">
+      Registration Form
+    </header>
+    <form class="form-horizontal form container" name="form">
+      <div class="form-group">
+        <label class="control-label col-sm-2 required-field" for="name">Name </label>
+        <div class="col-sm-9">
+          <input type="text" name="name" class="form-control" placeholder="Your full name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-2 required-field">Email </label>
+        <div class="col-sm-9">
+          <input type="text" name="email" placeholder="Email" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dob" class="control-label col-sm-2 required-field">DOB </label>
+        <div class="col-sm-9">
+          <input type="date" name="dob" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mob" class="control-label col-sm-2 required-field">Contact no. </label>
+        <div class="col-sm-9 ">
+          <input type="tel" name="mob" placeholder="contact no." class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="course" class="control-label col-sm-2">Course </label>
+        <div class="col-sm-9 ">
+          <select name="course" class="form-control" >
+            <<option value="">Select</option>
+            <option value="BE">BE</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BTech">BTech</option>
+            <option value="MTech">MTech</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="gender" class="control-label col-sm-2">Gender </label>
+        <div class="col-sm-9 radio">
+          <label>
+            <input type="radio" name="gender" value="male">Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female">Female
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="hobbies" class="control-label col-sm-2">Hobbies </label>
+        <div class="col-sm-9 checkbox">
+          <label>
+            <input type="checkbox" name="hobbies" value="Drawing">Drawing
+          </label>&nbsp&nbsp
+          <label>
+            <input type="checkbox" name="hobbies" value="Dancing">Dancing
+          </label>&nbsp&nbsp
+          <label>
+            <input type="checkbox" name="hobbies" value="Tracking">Tracking
+          </label>&nbsp&nbsp
+          <label>
+            <input type="checkbox" name="hobbies" value="Traveling">Traveling
+          </label>&nbsp&nbsp
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address" class="control-label col-sm-2">Address </label>
+        <div class="col-sm-9">
+          <textarea name="address" rows="8" cols="80" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="col-sm-10 col-sm-offset-2">
+        <input type="submit" name="submit" value="Submit" class="btn btn-primary" onsubmit="validate()">
+      </div>
+    </form>
+    <script type="text/javascript" src="forms.js"></script>
+  </body>
+</html>

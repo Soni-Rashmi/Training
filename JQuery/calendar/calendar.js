@@ -53,8 +53,12 @@ function setCalendarData(d) {
     }
 
     d = new Date(year, m, firstDay.getDate());
-    if(firstDay.getDay() >= 5 && lastDay.getDate() > 28){
-        totalRows = 6;
+    if(firstDay.getDay() >= 5 && lastDay.getDate() > 28 ){
+      if(lastDay.getDate() == 30 && lastDay.getDay() >=5){
+          totalRows = 5;
+      }else {
+          totalRows = 6;
+      }
     }
     for(var i = 0; rows < totalRows; i++){
         if(i % 7 === 0 ){

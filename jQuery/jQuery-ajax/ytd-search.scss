@@ -1,0 +1,91 @@
+$border-radius : 5px;
+$sm-screen-size : 768px;
+
+ @mixin setBgColor($bg-color) {
+   background-color: $bg-color;
+ }
+
+body {
+
+  .header {
+    @include setBgColor(#86c7f3);
+    color: #ffffff;
+    font-size : 40px;
+    text-align : center;
+  }
+
+  .search-bar {
+    margin-bottom: 30px;
+  }
+
+  .search {
+    cursor: auto;
+    border : 1px solid #B0B0B0;
+    border-bottom-left-radius : $border-radius;
+    border-top-left-radius : $border-radius;
+  }
+
+  .page-content {
+    min-height: 750px;
+
+    .tile {
+        @include setBgColor(#fcfeff);
+        border-style: groove;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        padding : 10px 10px;
+        .image-item {
+          height: 220px;
+      }
+        .img-info {
+
+          .img-description {
+            overflow: hidden;
+            text-align: justify;
+            text-overflow: clip;
+            white-space: normal;
+            height: 60px;
+          }
+
+          .img-title {
+            border-bottom-style: groove;
+            font-size : 20px;
+            font-weight: 400;
+            height: 45px;
+            overflow: hidden;
+            padding-top: 15px;
+            text-overflow: clip;
+            white-space: normal;
+          }
+        }
+
+        .button {
+          text-align: center;
+
+          .watch-btn {
+            @include setBgColor(#AED6F1);
+            border-radius: 5px;
+            margin-left: 30px;
+            padding: 3px 15px;
+          }
+          .like-btn {
+              float: right;
+              padding: 5px 5px 0px;
+          }
+        }
+      }
+  }
+
+  footer {
+    @include setBgColor(#AED6F1);
+    margin : 20px;
+    padding : 20px;
+    text-align : center;
+  }
+
+}
+@media screen and (min-width : $sm-screen-size) {
+  .image-item {
+    height: 220px;
+  }
+}

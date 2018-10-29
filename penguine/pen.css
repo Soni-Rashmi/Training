@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://cdn.rawgit.com/EmojiTwo/emojitwo/master/css/emojitwo-awesome.css');
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Nunito, sans-serif;
+  font-size: 100px;
+  margin-bottom: 2em;
+}
+body {
+  background-color: #00bcd4;
+  min-height: 100vh;
+  padding: 10rem;
+}
+.penguin-container {
+  width: 230px;
+  margin: 0 auto;
+  transform: scale(1.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.penguin-body {
+  box-shadow: inset -20px -20px 0px rgba(0, 0, 0, 0.1);
+  background-color: #263238;
+  width: 230px;
+  height: 300px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+}
+.penguin-body-left-inside, .penguin-body-right-inside {
+  z-index: 2;
+  position: absolute;
+  width: 130px;
+  height: 210px;
+  border-radius: 50%;
+  background-color: white;
+}
+.penguin-body-right-inside {
+  right: 30px;
+  transform: rotate(20deg);
+  box-shadow: inset -5px -10px 0px rgba(0, 0, 0, 0.1);
+}
+.penguin-body-left-inside {
+  transform: rotate(-20deg);
+  left: 30px;
+}
+.penguin-right-wing, .penguin-left-wing {
+  position: absolute;
+  top: 130px;
+  background-color: #263238;
+  width: 100px;
+  height: 35px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.penguin-right-wing {
+  transform-origin: left;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: inset -5px -10px 0px rgba(0, 0, 0, 0.1);
+  transform: rotate(40deg);
+  right: -75px;
+}
+.penguin-left-wing {
+  transform: rotate(130deg);
+  top: 150px;
+  left: -66px;
+}
+.penguin-right-eye, .penguin-left-eye {
+  box-shadow: inset -3px -3px 0px rgba(0, 0, 0, 0.3);
+  top: 70px;
+  z-index: 3;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #263238;
+}
+.penguin-right-eye {
+  right: 57px;
+}
+.penguin-left-eye {
+  left: 57px;
+}
+.penguin-nose {
+  top: 110px;
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffc107;
+  border-radius: 50%;
+}
+.penguin-right-foot, .penguin-left-foot {
+  box-shadow: inset -5px -10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ffc107;
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  z-index: 3;
+  bottom: 0px;
+  border-radius: 50%;
+}
+.penguin-right-foot {
+  right: 5px;
+}
+.penguin-left-foot {
+  left: 5px;
+}
+.shadow {
+  z-index: -1;
+  bottom: -10px;
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}

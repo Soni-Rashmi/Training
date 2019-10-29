@@ -1,0 +1,36 @@
+$body-bg-color: #E1F5FE;
+$error-color: #D44E1F;
+$font-color: #D44E1F;
+$header-bg-color: #81D4FA;
+
+@mixin set-bg-color($bg-color) {
+    background-color: $bg-color;
+}
+
+body {
+    @include set-bg-color($body-bg-color);
+    font-size: 15px;
+
+    header {
+        @include set-bg-color($header-bg-color);
+        font-size: 40px;
+        height: 150px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .form {
+        padding: 30px;
+
+        label.error {
+            color: $error-color;
+            font-size: smaller;
+            font-weight: normal;
+        }
+    }
+
+    .required-field::after {
+        color: $font-color;
+        content: "*";
+    }
+}

@@ -1,0 +1,69 @@
+$cell-bg-color : #5d97ed;
+$sunday-color : #ff0606;
+$sat-color : #7bc645;
+$other-day-color : #6b6969;
+$other-day-bgcolor : #e2e2e2;
+
+@mixin setColor($font-color) {
+    color: $font-color;
+}
+
+@mixin setBgColor($bg-color) {
+    background-color: $bg-color;
+}
+
+.calendar-div {
+    margin-top: 50px;
+
+    .month-name {
+        @include setBgColor($cell-bg-color);
+        border-style: groove;
+        font-size: 30px;
+        margin: 20px;
+        text-align: center;
+    }
+    .cell {
+        border: 1px solid $cell-bg-color;
+        border-style: groove;
+        font-size: 19px;
+        height: 60px;
+        max-width: 50px;
+        text-align: center;
+    }
+
+    .sunday {
+        @include setColor($sunday-color);
+    }
+
+    .saturday {
+        @include setColor($sat-color);
+    }
+    .today {
+        @include setBgColor($cell-bg-color);
+        font-size: 35px;
+    }
+    .other-days {
+        @include setColor($other-day-color);
+        @include setBgColor($other-day-bgcolor);
+    }
+}
+.navigation {
+    border-style: none;
+    position: fixed;
+    text-align: center;
+    top: 545px;
+    width: 785px;
+
+    .previous-btn, .next-btn {
+        @include setBgColor($cell-bg-color);
+        border-radius: 3px;
+        font-size: 20px;
+    }
+    .previous-btn {
+        padding: 3px 25px;
+    }
+    .next-btn{
+        margin-right: -45px;
+        padding: 3px 25px;
+    }
+}

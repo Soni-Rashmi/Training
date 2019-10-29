@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="calendar-1.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 calendar-div" id="calendar">
+          <table class="table" id="calendar-data">
+            <tr>
+              <td colspan="7" id="month-name" class="month-name"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="navigation col-sm-8 col-sm-offset-2">
+          <button type="button" name="button" class="btn-default previous-btn pull-left"><span class="glyphicon glyphicon-triangle-left"></span></button>
+          <button type="button" name="button" class="btn-default next-btn pull-right"><span class="glyphicon glyphicon-triangle-right"></span></button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="calendar.js"></script>
+  </body>
+</html>

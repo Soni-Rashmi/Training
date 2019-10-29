@@ -1,0 +1,20 @@
+body {
+  background-color: #E1F5FE;
+  font-size: 15px; }
+  body header {
+    background-color: #81D4FA;
+    font-size: 40px;
+    height: 150px;
+    padding-top: 30px;
+    text-align: center; }
+  body .form {
+    padding: 30px; }
+    body .form label.error {
+      color: #D44E1F;
+      font-size: smaller;
+      font-weight: normal; }
+  body .required-field::after {
+    color: #D44E1F;
+    content: "*"; }
+
+/*# sourceMappingURL=style.css.map */
